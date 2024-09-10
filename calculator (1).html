@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Calculator</title>
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      #calculator-container {
+         margin-top: 50px;
+         width: 300px;
+      }
+      #display {
+         text-align: right;
+         margin-bottom: 10px;
+      }
+      .btn {
+         width: 100%;
+         margin-bottom: 5px;
+      }
+    </style>
+</head>
+<body>
+    <!-- Calculator code goes here-->
+     <div class="container" id="calculator-container">
+      <div class="row">
+         <input type="text" name="" class="form-control" id="display">
+      </div>
+      <div class="row">
+         <div class="col-md-3">
+            <button class="btn btn-danger" data-operator="C">C</button>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="7">7</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="8">8</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="9">9</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-secondary" data-operator="/">/</button>
+         </div>
+     </div>
+      <div class="row">
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="4">4</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="5">5</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="6">6</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-secondary" data-operator="*">*</button>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="1">1</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="2">2</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="3">3</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-secondary" data-operator="-">-</button>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-3">
+            <button class="btn btn-default" data-value="0">0</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-secondary" data-value=".">.</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-secondary" data-operator="=">=</button>
+         </div>
+         <div class="col-md-3">
+            <button class="btn btn-secondary" data-operator="+">+</button>
+         </div>
+      </div>
+      <script src="calculator.js"></script>
+</body>
+</html>
